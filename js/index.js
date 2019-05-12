@@ -109,3 +109,21 @@ visionHeading.textContent = siteContent["main-content"]["vision-h4"];
 
 let visionContent = document.querySelectorAll("p", ".text-content")[4];
 visionContent.textContent = siteContent["main-content"]["vision-content"];
+
+// contact
+let contactHeading = document.querySelector(".contact h4");
+contactHeading.textContent = siteContent["contact"]["contact-h4"];
+
+let address = document.querySelectorAll(".contact p")[0];
+console.log(address);
+address.textContent = siteContent["contact"]["address"];
+
+let phone = document.querySelectorAll(".contact  p")[1];
+phone.textContent = siteContent["contact"]["phone"];
+
+let email = document.querySelectorAll(".contact  p")[2];
+email.textContent = siteContent["contact"]["email"];
+
+//footer
+let footer = document.querySelector("footer p");
+footer.textContent = siteContent["footer"]["copyright"];
