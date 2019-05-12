@@ -76,21 +76,36 @@ let headerButton = document.querySelector("button");
 headerButton.textContent = siteContent["cta"]["button"];
 
 //main content top-content
-let features = document.querySelectorAll("h4", ".text-content")[0];
-console.log(features);
-features.textContent = siteContent["main-content"]["features-h4"];
+let featuresHeading = document.querySelectorAll("h4", ".text-content")[0];
+featuresHeading.textContent = siteContent["main-content"]["features-h4"];
 
 let featuresContent = document.querySelectorAll("p", ".text-content")[0];
-console.log(featuresContent);
 featuresContent.textContent = siteContent["main-content"]["features-content"];
 
-let about = document.querySelectorAll("h4", ".text-content")[1];
-console.log(about);
-about.textContent = siteContent["main-content"]["about-h4"];
+let aboutHeading = document.querySelectorAll("h4", ".text-content")[1];
+aboutHeading.textContent = siteContent["main-content"]["about-h4"];
 
 let aboutContent = document.querySelectorAll("p", ".text-content")[1];
-console.log(aboutContent);
 aboutContent.textContent = siteContent["main-content"]["about-content"];
 
-let middleImage = document.getElementById('middle-img');
-middleImage.src = siteContent['main-content']['middle-img-src'];
+let middleImage = document.getElementById("middle-img");
+middleImage.src = siteContent["main-content"]["middle-img-src"];
+
+// bottom-content
+let servicesHeading = document.querySelectorAll("h4", ".text-content")[2];
+servicesHeading.textContent = siteContent["main-content"]["services-h4"];
+
+let servicesContent = document.querySelectorAll("p", ".text-content")[2];
+servicesContent.textContent = siteContent["main-content"]["services-content"];
+
+let productHeading = document.querySelectorAll("h4", ".text-content")[3];
+productHeading.textContent = siteContent["main-content"]["product-h4"];
+
+let productContent = document.querySelectorAll("p", ".text-content")[3];
+productContent.textContent = siteContent["main-content"]["product-content"];
+
+let visionHeading = document.querySelectorAll("h4", ".text-content")[4];
+visionHeading.textContent = siteContent["main-content"]["vision-h4"];
+
+let visionContent = document.querySelectorAll("p", ".text-content")[4];
+visionContent.textContent = siteContent["main-content"]["vision-content"];
