@@ -74,3 +74,20 @@ headerHeading.textContent = siteContent["cta"]["h1"];
 
 let headerButton = document.querySelector("button");
 headerButton.textContent = siteContent["cta"]["button"];
+
+//main content top-content
+let features = document.querySelectorAll("h4", ".text-content")[0];
+console.log(features);
+features.textContent = siteContent["main-content"]["features-h4"];
+
+let featuresContent = document.querySelectorAll("p", ".text-content")[0];
+console.log(featuresContent);
+featuresContent.textContent = siteContent["main-content"]["features-content"];
+
+let about = document.querySelectorAll("h4", ".text-content")[1];
+console.log(about);
+about.textContent = siteContent["main-content"]["about-h4"];
+
+let aboutContent = document.querySelectorAll("p", ".text-content")[1];
+console.log(aboutContent);
+aboutContent.textContent = siteContent["main-content"]["about-content"];
