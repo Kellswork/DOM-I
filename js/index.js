@@ -91,3 +91,6 @@ about.textContent = siteContent["main-content"]["about-h4"];
 let aboutContent = document.querySelectorAll("p", ".text-content")[1];
 console.log(aboutContent);
 aboutContent.textContent = siteContent["main-content"]["about-content"];
+
+let middleImage = document.getElementById('middle-img');
+middleImage.src = siteContent['main-content']['middle-img-src'];
