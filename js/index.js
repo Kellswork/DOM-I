@@ -129,8 +129,18 @@ footer.textContent = siteContent["footer"]["copyright"];
 
 // add new content
 //change nav color
-let nav = document.body.getElementsByTagName("a");
+let navLink = document.body.getElementsByTagName("a");
 
-for(let i = nav.length - 1; i >= 0; i--) {
-  nav[i].style.color = 'green';
+for(let i = navLink.length - 1; i >= 0; i--) {
+  navLink[i].style.color = 'green';
 }
+
+let newNavLink = document.createElement('a');
+newNavLink.href = '#';
+const newNavLinkTextNode = document.createTextNode('Home');
+newNavLink.appendChild(newNavLinkTextNode);
+newNavLink.style.color = 'green';
+
+const nav = document.getElementsByTagName('nav');
+nav[0].prepend(newNavLink);
+console.log();
