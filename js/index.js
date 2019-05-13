@@ -141,6 +141,5 @@ const newNavLinkTextNode = document.createTextNode('Home');
 newNavLink.appendChild(newNavLinkTextNode);
 newNavLink.style.color = 'green';
 
-const nav = document.getElementsByTagName('nav');
-nav[0].prepend(newNavLink);
-console.log();
+const nav = document.querySelector('nav');
+nav.prepend(newNavLink);
